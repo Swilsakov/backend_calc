@@ -9,7 +9,7 @@ const PORT = 8000;
 app.use(cors());
 app.use(express.json());
 app.use("/api/auth", authRouter);
-app.use("/", calcRouter);
+app.use("/api", calcRouter);
 
 const start = () => {
   try {
